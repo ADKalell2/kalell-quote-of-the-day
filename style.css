@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%
+}
+
+body{
+    background-image: radial-gradient(#1f2b94,#151B54);
+}
+
+.container .features{
+    border-top: 1px solid #1f2b94;
+    padding-top: 20px;
+}
+
+.features ul{
+    display: flex;
+}
+
+.features ul a{
+    list-style: none;
+    margin-top: 0 5px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    cursor: pointer;
+    color: #1f2b94;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #1f2b94;
+}
+
+.features ul a:hover{
+    color: #fff;
+    background: #1f2b94;
+    transition: all 0.3s ease;
+}
+
+.quote-box{
+    background: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.quote-box .features{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.quote-box h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-box h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: #1f2b94;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '"';
+}
+
+.quote-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+    font-style: italic;
+}
+
+.quote-box span:before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #1f2b94;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box button{
+    background: #1f2b94;
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid #1f2b94;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.quote-box button:nth-child(2){
+    background: transparent;
+    color: #1f2b94;
+}
+
+@media only screen and (max-width: 600px){
+    .quote-box{
+        background: #fff;
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+    }
+}
